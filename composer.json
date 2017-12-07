@@ -1,6 +1,6 @@
 {
-    "name": "bradfeehan/desk-php",
-    "description": "PHP client for Desk.com v2 API based on Guzzle",
+    "name": "mikolaykorniat/desk-php",
+    "description": "PHP client for Desk.com v2 API based on Guzzle (Forked from bradfeehan/desk-php)",
     "keywords": ["desk", "desk.com", "assistly", "assistly.com", "api", "guzzle"],
     "license": "MIT",
     "authors": [
