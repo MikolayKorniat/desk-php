@@ -1,0 +1,13 @@
+extends: list
+summary: Retrieve a paginated list of translations for a particular snippet
+uri: "snippets/{name}/translations"
+responseClass: SnippetTranslationsPage
+parameters:
+    name:
+        description: The name of the snippet to retrieve translations for
+        required: true
+        location: uri
+data:
+    embeds:
+        entries:
+            model: SnippetTranslationModel

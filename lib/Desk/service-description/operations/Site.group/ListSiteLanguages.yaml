@@ -1,0 +1,4 @@
+extends: list
+summary: Retrieve a paginated list of site languages
+uri: site/languages
+responseClass: LanguagesSitePage

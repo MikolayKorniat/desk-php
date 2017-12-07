@@ -1,0 +1,15 @@
+extends: page
+properties:
+    entries:
+        type: array
+        items: { extends: SnippetTranslationModel }
+        location: embedded
+    self: &SELF
+        location: links
+        data:
+            operation: ListSnippetTranslations
+            pattern: "#/snippets/(?P<name>[a-zA-Z0-9_]+)/translations\\??(?P<_query>.*)$#"
+    first: *SELF
+    last: *SELF
+    next: *SELF
+    previous: *SELF

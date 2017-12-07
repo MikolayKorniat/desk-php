@@ -1,0 +1,15 @@
+extends: page
+properties:
+    entries:
+        type: array
+        items: { extends: SnippetModel }
+        location: embedded
+    self: &SELF
+        location: links
+        data:
+            operation: ListSnippets
+            pattern: "#/snippets\\??(?P<_query>.*)$#"
+    first: *SELF
+    last: *SELF
+    next: *SELF
+    previous: *SELF

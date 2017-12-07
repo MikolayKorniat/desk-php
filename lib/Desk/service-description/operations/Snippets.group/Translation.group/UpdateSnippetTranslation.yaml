@@ -1,0 +1,7 @@
+extends: update
+summary: Update translation for a particular snippet
+uri: "snippets/{name}/translations/{locale}"
+parameters:
+    name:     { required: true, location: uri }
+    locale:   { extends: SnippetTranslationModel.locale, required: true, location: uri }
+    text:     { extends: SnippetTranslationModel.text }

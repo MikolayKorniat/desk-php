@@ -1,0 +1,31 @@
+extends: page
+properties:
+    entries:
+        type: array
+        items: { extends: LanguagesSiteModel }
+        location: embedded
+    self:
+        location: links
+        data:
+            operation: SearchSiteLanguages
+            pattern: "#/site/languages\\??(?P<_query>.*)$#"
+    first:
+        location: links
+        data:
+            operation: SearchSiteLanguages
+            pattern: "#/site/languages\\??(?P<_query>.*)$#"
+    last:
+        location: links
+        data:
+            operation: SearchSiteLanguages
+            pattern: "#/site/languages\\??(?P<_query>.*)$#"
+    next:
+        location: links
+        data:
+            operation: SearchSiteLanguages
+            pattern: "#/site/languages\\??(?P<_query>.*)$#"
+    previous:
+        location: links
+        data:
+            operation: SearchSiteLanguages
+            pattern: "#/site/languages\\??(?P<_query>.*)$#"

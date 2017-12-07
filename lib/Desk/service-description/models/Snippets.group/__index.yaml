@@ -1,0 +1,21 @@
+SnippetModel.name:
+    extends: parameter
+    description: Alias of the snippet
+    required: true
+    type: string
+    minLength: 1
+SnippetModel.text:
+    extends: parameter
+    description: Snippet text
+    required: true
+    type: string
+    minLength: 1
+
+SnippetTranslationModel.locale:
+    extends: parameter
+    description: Language code of the translation
+    type: string
+SnippetTranslationModel.text:
+    extends: parameter
+    description: "The Snippet's translation in the locale"
+    type: string

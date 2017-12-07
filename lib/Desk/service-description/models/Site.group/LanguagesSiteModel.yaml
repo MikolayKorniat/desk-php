@@ -1,0 +1,12 @@
+type: object
+properties:
+    name:               { extends: LanguagesModel.name }
+    agent:              { extends: LanguagesModel.agent }
+    case:               { extends: LanguagesModel.case }
+    customer:           { extends: LanguagesModel.customer }
+    is_case_default:   { extends: LanguagesModel.is_case_default }
+    self:
+        location: links
+        data:
+            operation: ShowSiteLanguages
+            pattern: "#/site/languages/(?P<id>[a-zA-Z0-9_-]+)$#"

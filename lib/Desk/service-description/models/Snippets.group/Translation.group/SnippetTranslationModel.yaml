@@ -1,0 +1,15 @@
+type: object
+properties:
+    text:       { extends: SnippetTranslationModel.text   }
+    locale:     { extends: SnippetTranslationModel.locale }
+    self:
+        location: links
+        data:
+            operation: ShowSnippetTranslation
+            pattern: "#/snippets/(?P<name>[a-zA-Z0-9_]+)/translations/(?P<locale>[a-zA-Z_-]+)$#"
+#    snippet:
+#        location: links
+#        sentAs: self
+#        data:
+#            operation: ShowSnippet
+#            pattern: "#/snippets/(?P<name>[a-zA-Z0-9_]+)#"

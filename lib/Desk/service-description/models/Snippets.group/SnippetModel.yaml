@@ -1,0 +1,10 @@
+type: object
+properties:
+    name:              { extends: SnippetModel.name }
+    text:              { extends: SnippetModel.text }
+    create_translation:
+        location: links
+        sentAs: translations
+        data:
+            operation: CreateSnippetTranslation
+            pattern: "#/snippets/(?P<name>[0-9]+)/translations$#"

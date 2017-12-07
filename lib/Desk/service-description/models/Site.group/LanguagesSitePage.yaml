@@ -1,0 +1,14 @@
+extends: page
+properties:
+    entries:
+        type: array
+        items: { extends: LanguagesSiteModel }
+        location: embedded
+    self: &SELF
+        location: links
+        data:
+            operation: ListSiteLanguages
+            pattern: "#/site/languages\\??(?P<_query>.*)$#"
+    first: *SELF
+    last: *SELF
+    previous: *SELF

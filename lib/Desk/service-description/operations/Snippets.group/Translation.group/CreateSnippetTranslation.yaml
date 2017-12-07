@@ -1,0 +1,8 @@
+extends: create
+summary: Create a new translation for a particular snippet
+uri: "snippets/{name}/translations"
+responseClass: SnippetTranslationModel
+parameters:
+    name:     { required: true, location: uri }
+    locale:   { extends: SnippetTranslationModel.locale, required: true }
+    text:     { extends: SnippetTranslationModel.text, required: true }
